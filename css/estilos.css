@@ -1,0 +1,360 @@
+body{
+	font-family: 'Dancing Script', cursive;
+	color: black;
+	background-color: #02010a;
+	width: 100%;
+	min-width: 180px;
+	margin: auto;
+}
+
+header, section, footer {
+	padding: 1em, 2em;
+}
+
+.contenido {
+	width: 900px;
+	max-width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+header {
+	background-color: #5b7989;
+	border-radius: 10px 10px 0px 0px;
+	overflow: hidden;
+	max-width: 100%;
+	display: block;
+}
+
+header h1{
+	background-color: #5b7989;
+	color: white;
+	text-shadow: 2px 2px 0 #02010a;
+	font-size: 2em;
+	float: left;
+	margin: 15px;
+}
+
+@keyframes animacion_header {
+	0% {
+		margin-top: 150%;
+	}
+	60% {
+		margin-top: -5%;
+	}
+	100% {
+		margin-top: 0%;
+	}
+}
+
+header {
+	-moz-animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -moz-animation-name: animacion_header;
+  -webkit-animation-name: animacion_header;
+  animation-name: animacion_header;
+  -moz-animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -moz-animation-direction: alternate;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+#menu-inicio, #menu-paisajes, #menu-retratos{
+	background-color: #5b7989;
+	float: right;
+}
+
+#menu-inicio ul, #menu-paisajes ul, #menu-retratos ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	padding-right: 5px;
+}
+
+#menu-inicio li,
+#menu-paisajes li, #menu-retratos li{
+	display: inline-block;
+	line-height: 80px;
+}
+
+#menu-inicio a,
+#menu-paisajes a, #menu-retratos a{
+	font-size: 1.8em;
+	color: white;
+	display: block;
+	padding: 0 10px;
+	text-decoration: underline;
+}
+
+#menu-inicio .index, #menu-paisajes .paisajes, #menu-retratos .retratos{
+	text-decoration: none;
+}
+
+img {
+	filter: drop-shadow(2px 2px 2px #02010a);
+}
+
+.contenido_principal {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.contenido_central {
+	background-color: #82c3a6;
+	text-align: center;
+	width: 100%;
+}
+
+#imagen1 {
+ padding: 10px;
+ margin: 10px;
+ width: 50%;
+ text-align: center;
+}
+
+.contenido_secundario {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.paisajes_retratos {
+	display: flex;
+	flex-direction: row;
+	background-color: #d5c75f;
+}
+
+.paisajes_retratos > div {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	width: 50%;
+}
+
+#div_paisaje img, #div_retrato img {
+	padding: 10px;
+	margin: 10px;
+	width: 80%;
+	text-align: center;
+	border: 1px;
+}
+
+#div_paisaje a, #div_retrato a{
+	font-size: 1.8em;
+	color: black;
+	padding: 10px;
+	margin: 10px;
+	width: 80%;
+}
+
+#div_paisaje img:hover {
+	-ms-transform: rotate(10deg); /* IE 9 */
+	-webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+	transform: rotate(10deg);
+	filter: drop-shadow(2px 2px 2px #82c3a6);
+}
+
+#div_retrato img:hover {
+		transform: translate(5px,-20px); /*W3C*/
+    -webkit-transform: translate(5px,-20px); /*Safari y Chrome*/
+    -o-transform: translate(5px,-20px); /*Opera*/
+		filter: drop-shadow(2px 2px 2px #82c3a6);
+}
+
+.contenido_paisajes, .contenido_retratos {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.galeria_paisajes_1, .galeria_paisajes_2, .galeria_retratos_1, .galeria_retratos_2 {
+	display: flex;
+	flex-direction: row;
+	background-color: #d5c75f;
+}
+
+.galeria_paisajes_1 > div {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	width: 33.33%;
+}
+
+.galeria_paisajes_2 > div {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	width: 33.33%;
+}
+
+.galeria_retratos_1 > div {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	width: 33.33%;
+}
+
+.galeria_retratos_2 > div {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	width: 33.33%;
+}
+
+#paisaje1 img, #paisaje2 img, #paisaje3 img, #paisaje4 img, #paisaje5 img, #paisaje6 img {
+	padding: 10px;
+	margin: 10px;
+	width: 80%;
+	text-align: center;
+}
+
+#retrato1 img, #retrato2 img, #retrato3 img, #retrato4 img, #retrato5 img, #retrato6 img {
+	padding: 10px;
+	margin: 10px;
+	width: 80%;
+	text-align: center;
+}
+
+#paisaje1 img, #retrato1 img{
+	-webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+	filter: blur(10px) drop-shadow(2px 2px 2px #02010a);
+}
+
+#paisaje2 img, #paisaje4 img, #paisaje6 img, #retrato2 img, #retrato4 img, #retrato6 img {
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%) drop-shadow(2px 2px 2px #02010a);
+}
+
+#paisaje3 img, #retrato3 img{
+	-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+	filter: sepia(90%) drop-shadow(2px 2px 2px #02010a);
+}
+
+footer {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+footer h2 {
+	font-size: 1.5em;
+}
+
+.pie_de_pagina {
+	font-size: 1.2em;
+	text-align: center;
+	background-color: #C6d5c5;
+	border-radius: 0px 0px 10px 10px;
+	flex-direction: row;
+	display: flex;
+	overflow: hidden;
+}
+
+.pie_de_pagina > div {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	width: 25%;
+}
+
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+
+ul.share-buttons .sr-only{
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+@media screen and (max-width:899px) {
+	header h1{
+		font-size: 2.2em;
+		float: none;
+		text-align: center;
+	}
+
+	#menu-inicio, #menu-paisajes, #menu-retratos{
+		float: none;
+		text-align: center;
+	}
+
+	#menu-inicio a,
+	#menu-paisajes a, #menu-retratos a{
+		font-size: 1.6em;
+	}
+
+	#imagen1 {
+ 	width: 80%;
+ 	}
+
+	.paisajes_retratos {
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+
+	.paisajes_retratos > div {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.galeria_paisajes_1, .galeria_paisajes_2, .galeria_retratos_1, .galeria_retratos_2 {
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+
+	.galeria_paisajes_1 > div {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.galeria_paisajes_2 > div {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.galeria_retratos_1 > div {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.galeria_retratos_2 > div {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.pie_de_pagina {
+		font-size: 1.3em;
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+
+	.pie_de_pagina > div {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+}
